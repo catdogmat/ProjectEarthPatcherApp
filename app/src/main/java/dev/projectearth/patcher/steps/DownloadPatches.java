@@ -37,7 +37,7 @@ public class DownloadPatches extends LoggedRunnable {
 
         // Always download the latest patches
         logEventListener.onLogLine(MainActivity.getAppContext().getResources().getString(R.string.step_download_downloading));
-        AndroidUtils.downloadFile("https://github.com/Project-Earth-Team/Patches/archive/main.zip", zipFile);
+        AndroidUtils.downloadFile("https://github.com/catdogmat/Patches/archive/main.zip", zipFile);
 
         logEventListener.onLogLine(MainActivity.getAppContext().getResources().getString(R.string.step_download_extract));
         try (ZipInputStream zip = new ZipInputStream(new FileInputStream(zipFile))) {
