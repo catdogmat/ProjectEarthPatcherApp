@@ -4,7 +4,7 @@
     <EditTextPreference
         android:inputType="textUri"
         android:maxLength="27"
-        app:defaultValue="https://p.projectearth.dev"
+        app:defaultValue="http://yourip:80"
         app:key="locator_server"
         app:title="@string/locator_server_title"
         app:useSimpleSummaryProvider="true" />
